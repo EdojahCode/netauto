@@ -1,0 +1,9 @@
+- name: Configure VLANs
+  hosts: switches
+  gather_facts: no
+  tasks:
+    - name: Create VLANs
+      ios_config:
+        lines:
+          - vlan 10
+          - SCIENCE_VLAN.
