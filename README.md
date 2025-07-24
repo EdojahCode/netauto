@@ -19,9 +19,15 @@ To design and deploy a scalable, secure, and automated network infrastructure ac
 
 ## 📁 Repository Structure
 /SDU-Campus-Network/
+
 ├── playbooks/ # Ansible playbooks (e.g. VLAN config)
+
 ├── templates/ # Jinja2 configuration templates
+
 ├── scripts/ # Netmiko Python scripts
+
 ├── golden-configs/ # Reference device configurations
+
 ├── diagrams/ # Network topology images (optional)
+
 ├── README.md # Project documentation
