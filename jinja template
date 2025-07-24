@@ -1,0 +1,8 @@
+hostname {{ inventory_hostname }}
+interface Vlan10
+ ip address {{ mgmt_ip }} 255.255.255.0
+ no shutdown
+{% for vlan in vlans %}
+vlan {{ vlan.id }}
+ name {{ vlan.name }}
+{% endfor %}
