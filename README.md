@@ -38,6 +38,4 @@ netauto/
 ├── deviceconfig.docx
 
 └── topology.png
-<img width="424" height="193" alt="image" src="https://github.com/user-attachments/assets/2867aa97-0c24-43ef-bd94-ed610d5e599e" />
-
  
