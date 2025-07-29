@@ -1,0 +1,60 @@
+ HOWTO: Use This Repository
+
+This repository provides all the resources required to simulate, test, and automate the configuration of a Campus Area Network (CAN) for Southern Delta University, Ozoro.
+
+Follow these steps to set up and deploy the automation:
+
+
+ 1. Prerequisites
+
+- Python 3.x
+- Ansible
+- Netmiko
+- Git
+- Cisco Packet Tracer or Cisco Modeling Labs (CML)
+
+Install Python dependencies:
+```bash
+pip install netmiko
+
+
+2. Install Ansible (on Linux/macOS):
+    sudo apt update && sudo apt install ansible
+
+3. Clone the Repository
+    git clone https://github.com/EdojahCode/netauto.git
+    cd netauto
+
+4. Understand the Repo Structure
+
+   /netauto/
+├── playbooks/              # Ansible Playbooks
+│   └── vlan_setup.yaml
+├── templates/              # Jinja2 Templates for switches/routers
+│   └── base_config.j2
+├── scripts/                # Netmiko Python Scripts
+│   └── netmiko_vlan.py
+├── golden-configs/         # Static configuration samples
+│   └── switch_base_config.txt
+├── README.md               # Documentation (this PROJECT)
+
+
+5. Automate Device Configuration
+
+Option A: Using Ansible
+Update your hosts file with the correct device IP addresses under the [switches] group.
+
+Run the playbook:
+ansible-playbook playbooks/vlan_setup.yaml -i hosts
+
+
+6. Option B: Using Netmiko (Python Script)
+
+Edit the IP address and credentials inside scripts/netmiko_vlan.py.
+Run the script:
+python scripts/netmiko_vlan.py
+
+7. Maintain Documentation
+Keep README.md, changelogs, and network diagrams up-to-date to help future IT staff and collaborators quickly understand and maintain the project.
+
+
