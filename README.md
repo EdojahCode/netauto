@@ -1,7 +1,7 @@
 # netauto
  # SDU Campus Network Automation Project
 
-This repository contains the automation scripts, templates, and configurations for the Campus Area Network (CAN) of **Southern Delta University, Ozoro**, developed as part of the FOC 321 course in the Faculty of Computing (Cybersecurity).
+This repository contains the automation scripts, templates, and configurations for the propose Campus Area Network (CAN) of **Southern Delta University, Ozoro**, developed Group 10.
 
 ---
 
